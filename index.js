@@ -1,13 +1,13 @@
-let prevScrollPos = window.pageYOffset;
+let scrollPrevio = window.pageYOffset; //20y
 
 window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
+  let scrollActual = window.pageYOffset; //-50y
 
-  if (prevScrollPos > currentScrollPos) {
+  if (scrollPrevio > scrollActual) {
     document.querySelector(".header").style.top = "0";
   } else {
     document.querySelector(".header").style.top = "-126px";
   }
 
-  prevScrollPos = currentScrollPos;
+  scrollPrevio = scrollActual;
 };
