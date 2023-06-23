@@ -3,6 +3,10 @@ a {
   color: #fff;
 }
 
+.inactive {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -16,86 +20,8 @@ body {
   color: #000;
   text-transform: uppercase;
   font-weight: normal;
-}
-
-.quienes-somos {
-  margin: 20px 70px;
-  padding: 20px;
-}
-.quienes-somos h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-}
-.quienes-somos p {
-  font-weight: 400;
-  text-align: justify;
-  letter-spacing: 1px;
-  font-size: 1.4rem;
-  line-height: 1.7;
-  color: #777777;
-}
-
-.porque-elegirnos {
-  margin: 20px 70px;
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.porque-elegirnos h2 {
   width: 100%;
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-}
-.porque-elegirnos h3 {
-  width: 33.3333333%;
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: 400;
-}
-.porque-elegirnos p {
-  margin: 10px;
-  width: 30%;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.7;
-  color: #777777;
-  letter-spacing: 1px;
-  text-align: justify;
-}
-
-.sobre-nosotros {
-  margin: 20px 70px;
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.sobre-nosotros h3 {
-  display: none;
-}
-.sobre-nosotros h2 {
-  width: 100%;
-  text-align: center;
-  margin: 0 20px 50px;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-}
-.sobre-nosotros p {
-  width: 40%;
-  font-weight: 400;
-  text-align: justify;
-  letter-spacing: 1px;
-  font-size: 1.4rem;
-  line-height: 1.7;
-  color: #777777;
+  position: relative;
 }
 
 .header {
@@ -158,7 +84,8 @@ body {
 
 main {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 126px;
+  background-color: #ececec;
 }
 main .home {
   height: 600px;
@@ -202,7 +129,7 @@ main .home .hero button:hover {
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.39, 0.58, 0.57, 1) 0s;
 }
-main .productos-container {
+main .home-products-container {
   margin-top: 0;
   height: 600px;
   background-image: url(./elevauto/fondo.jpg);
@@ -210,7 +137,7 @@ main .productos-container {
   background-size: cover;
   background-repeat: no-repeat;
 }
-main .productos-container h2 {
+main .home-products-container h2 {
   margin: 0;
   text-align: center;
   padding: 40px 0 20px 0px;
@@ -222,13 +149,13 @@ main .productos-container h2 {
   letter-spacing: 2px;
   text-shadow: 0px 0px 2px #000;
 }
-main .productos-container .productos {
+main .home-products-container .home-products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1020px;
   margin: 0 auto;
 }
-main .productos-container .productos picture {
+main .home-products-container .home-products picture {
   background-color: #ffffff;
   display: grid;
   grid-template-rows: 3fr 1fr;
@@ -238,11 +165,11 @@ main .productos-container .productos picture {
   transition: 0.3s ease;
   height: 300px;
 }
-main .productos-container .productos picture img {
+main .home-products-container .home-products picture img {
   width: 90%;
   margin: 10px;
 }
-main .productos-container .productos picture .boton-etiqueta {
+main .home-products-container .home-products picture .boton-etiqueta {
   width: 100%;
   height: 80px;
   display: flex;
@@ -250,7 +177,7 @@ main .productos-container .productos picture .boton-etiqueta {
   justify-content: center;
   margin-bottom: 20px;
 }
-main .productos-container .productos picture .boton-etiqueta a {
+main .home-products-container .home-products picture .boton-etiqueta a {
   justify-self: end;
   padding: 5px 20px;
   width: 100px;
@@ -264,30 +191,31 @@ main .productos-container .productos picture .boton-etiqueta a {
   border-radius: 5px;
   transition: 0.5s ease;
 }
-main .productos-container .productos picture .boton-etiqueta a:hover {
+main .home-products-container .home-products picture .boton-etiqueta a:hover {
   background-color: #0095ff;
   transition: 0.3s;
 }
-main .productos-container .productos picture:hover {
+main .home-products-container .home-products picture:hover {
   box-shadow: 0px 0px 8px 0px;
   margin: 10px;
   height: 320px;
   transition: 0.3s;
 }
-main .productos-container .productos picture:hover a {
+main .home-products-container .home-products picture:hover a {
   font-size: 1.7rem;
   padding: 10px 25px;
   margin-top: 5px;
 }
-main .productos-container .boton-productos {
+main .home-products-container .boton-productos {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
 }
-main .productos-container .boton-productos button {
+main .home-products-container .boton-productos a {
   font-size: 1.5rem;
+  color: #000;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -297,7 +225,7 @@ main .productos-container .boton-productos button {
   border-radius: 5px;
   transition: 0.5s ease;
 }
-main .productos-container .boton-productos button:hover {
+main .home-products-container .boton-productos a:hover {
   background-color: #0095ff;
   font-size: 1.7rem;
   padding: 15px 65px;
@@ -354,6 +282,131 @@ main .contacto-container .encontranos {
   align-items: center;
   grid-area: p4;
 }
+main .body-products {
+  background-color: #ececec;
+  padding: 0 200px;
+}
+main .body-products .contenedor-productos {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .body-products .contenedor-productos .producto {
+  margin: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px;
+  align-items: center;
+  box-shadow: 0px 0px 5px #bbbbbb;
+}
+main .body-products .contenedor-productos .producto img {
+  width: 300px;
+}
+main .body-products .contenedor-productos .producto h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+main .body-products .contenedor-productos .producto p {
+  margin: 5px 0;
+  font-weight: 400;
+  color: #777777;
+  font-style: italic;
+}
+main .body-products .contenedor-productos .producto a {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  background-color: #49acf3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .body-products .contenedor-productos .producto a:hover {
+  background-color: #0095ff;
+  transition: all 0.3s ease;
+}
+main .producto-indiv {
+  width: 50%;
+  position: absolute;
+  background-color: #777777;
+  top: 0;
+}
+main .producto-indiv img {
+  width: inherit;
+}
+main .product-container {
+  width: 100%;
+  background-color: #ececec;
+}
+main .product-container .product-info {
+  max-width: 1020px;
+  background-color: #fff;
+  margin: 20px auto;
+  display: flex;
+  box-shadow: 0px 0px 5px #bbbbbb;
+}
+main .product-container .product-info .product-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .product-container .product-info .product-left .first-image {
+  width: 510px;
+}
+main .product-container .product-info .product-left .galeria-img {
+  max-width: 510px;
+  margin: 20px 0 0;
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  transition: transform 0.3s ease-in-out;
+}
+main .product-container .product-info .product-left .galeria-img img {
+  scroll-snap-align: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+}
+main .product-container .product-info .product-right {
+  width: 50%;
+  background-color: #fff;
+  padding: 20px 50px;
+}
+main .product-container .product-info .product-right h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0095ff;
+}
+main .product-container .product-info .product-right p {
+  color: #777777;
+  line-height: 1.8;
+}
+main .product-container .table-info-product {
+  background-color: #fff;
+  max-width: 1020px;
+  margin: 20px auto;
+  padding: 10px;
+}
+main .product-container .table-info-product h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+main .product-container .table-info-product .table-product {
+  background-color: #ececec;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  line-height: 1.4;
+}
 
 .contacto {
   background-color: #ffffff;
@@ -371,7 +424,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   border-top: 5px solid #777777;
   background-color: #101010;
   height: 150px;

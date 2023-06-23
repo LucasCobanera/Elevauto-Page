@@ -30,25 +30,25 @@
             <div class="navbar-container">
                 <img class="logo" src="./elevauto/logo.png" alt="Elevauto logo" />
                 <ul class="nav-bar">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#sevicios">Servicios</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./index.html#contacto">Contacto</a></li>
                 </ul>
             </div>
 
         </nav>
     </header>
-    <main>
+    <main onload="cargarArchivos()">
         <section class="home">
             <div class="hero">
                 <h2>Conozca nuestro amplio catálogo de productos</h2>
                 <button>Ver más</button>
             </div>
         </section>
-        <section class="productos-container">
+        <section class="home-products-container">
             <h2>nuestros mejores elevadores</h2>
-            <div class="productos">
+            <div class="home-products">
                 <picture>
                     <img src="./elevauto/elevador.jpeg" alt="">
                     <div class="boton-etiqueta"><a href="">Eco-3500</a></div>
@@ -68,7 +68,7 @@
 
             </div>
             <div class="boton-productos">
-                <button>Ver Todos</button>
+                <a href="./productos.html">Ver Todos</a>
             </div>
         </section>
         <section id="contacto" class="contacto-container">
@@ -120,6 +120,6 @@
         </div>
     </footer>
 </body>
-<script src="./index.js"></script>
+<script src="./index2.js"></script>
 
 </html>

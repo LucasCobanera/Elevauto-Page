@@ -3,6 +3,10 @@ a {
   color: #fff;
 }
 
+.inactive {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -15,85 +19,8 @@ body {
   color: #000;
   text-transform: uppercase;
   font-weight: normal;
-}
-
-//clases body-nav
-.quienes-somos {
-  margin: 20px 70px;
-  padding: 20px;
-  h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-  }
-  p {
-    font-weight: 400;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 1.4rem;
-    line-height: 1.7;
-    color: #777777;
-  }
-}
-.porque-elegirnos {
-  margin: 20px 70px;
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  h2 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-  }
-  h3 {
-    width: 33.3333333%;
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 400;
-  }
-  p {
-    margin: 10px;
-    width: 30%;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.7;
-    color: #777777;
-    letter-spacing: 1px;
-    text-align: justify;
-  }
-}
-.sobre-nosotros {
-  margin: 20px 70px;
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  h3 {
-    display: none;
-  }
-  h2 {
-    width: 100%;
-    text-align: center;
-    margin: 0 20px 50px;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-  }
-  p {
-    width: 40%;
-    font-weight: 400;
-    text-align: justify;
-    letter-spacing: 1px;
-    font-size: 1.4rem;
-    line-height: 1.7;
-    color: #777777;
-  }
+  width: 100%;
+  position: relative;
 }
 
 //header
@@ -101,7 +28,6 @@ body {
   width: 100%;
   height: 126px;
   position: fixed;
-  // top: -126px;
   width: 100%;
   background-color: #f1f1f1;
   transition: top 0.3s ease-in-out;
@@ -116,7 +42,6 @@ body {
       margin: 0 auto;
       display: flex;
       justify-content: center;
-      // padding-top: 50px;
       .nav-bar {
         display: flex;
         margin-top: 45px;
@@ -159,7 +84,8 @@ body {
 //main
 main {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 126px;
+  background-color: #ececec;
   .home {
     height: 600px;
     background-image: linear-gradient(#49acf398, #49acf398),
@@ -203,7 +129,7 @@ main {
       }
     }
   }
-  .productos-container {
+  .home-products-container {
     margin-top: 0;
     height: 600px;
     background-image: url(./elevauto/fondo.jpg);
@@ -223,7 +149,7 @@ main {
       text-shadow: 0px 0px 2px #000;
     }
 
-    .productos {
+    .home-products {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       max-width: 1020px;
@@ -288,8 +214,9 @@ main {
       justify-content: center;
       align-items: center;
       height: 80px;
-      button {
+      a {
         font-size: 1.5rem;
+        color: #000;
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         text-transform: uppercase;
@@ -299,7 +226,7 @@ main {
         border-radius: 5px;
         transition: 0.5s ease;
       }
-      button:hover {
+      a:hover {
         background-color: #0095ff;
         font-size: 1.7rem;
         padding: 15px 65px;
@@ -362,6 +289,140 @@ main {
       grid-area: p4;
     }
   }
+
+  //PAGINA DE PRODUCTOS
+  .body-products {
+    background-color: #ececec;
+    padding: 0 200px;
+    .contenedor-productos {
+      // width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      .producto {
+        margin: 20px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 10px;
+        align-items: center;
+        box-shadow: 0px 0px 5px #bbbbbb;
+        img {
+          width: 300px;
+        }
+        h2 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          letter-spacing: 1px;
+          margin: 5px 0;
+        }
+        p {
+          margin: 5px 0;
+          font-weight: 400;
+          color: #777777;
+          font-style: italic;
+        }
+        a {
+          font-size: 1.5rem;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 10px 60px;
+          background-color: #49acf3;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        a:hover {
+          background-color: #0095ff;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+  .producto-indiv {
+    width: 50%;
+    position: absolute;
+    background-color: #777777;
+    top: 0;
+    img {
+      width: inherit;
+    }
+  }
+
+  //PAGINA DE PRODUCTO INDIVIDUAL
+  .product-container {
+    width: 100%;
+    background-color: #ececec;
+    .product-info {
+      max-width: 1020px;
+      background-color: #fff;
+      margin: 20px auto;
+      display: flex;
+      box-shadow: 0px 0px 5px #bbbbbb;
+
+      .product-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        // margin: 0 10px;
+
+        .first-image {
+          width: 510px;
+        }
+        .galeria-img {
+          max-width: 510px;
+          margin: 20px 0 0;
+          display: flex;
+          overflow-x: scroll;
+          white-space: nowrap;
+          transition: transform 0.3s ease-in-out;
+          img {
+            scroll-snap-align: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+            width: 200px;
+            height: 200px;
+          }
+        }
+      }
+      .product-right {
+        width: 50%;
+        background-color: #fff;
+        padding: 20px 50px;
+        h1 {
+          font-size: 3rem;
+          font-weight: 800;
+          color: #0095ff;
+        }
+        p {
+          color: #777777;
+          line-height: 1.8;
+        }
+      }
+    }
+    .table-info-product {
+      background-color: #fff;
+      max-width: 1020px;
+      margin: 20px auto;
+      padding: 10px;
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .table-product {
+        background-color: #ececec;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        line-height: 1.4;
+      }
+    }
+  }
 }
 .contacto {
   background-color: #ffffff;
@@ -378,7 +439,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   border-top: 5px solid #777777;
   background-color: #101010;
   height: 150px;
