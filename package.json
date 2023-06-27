@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "@flaticon/flaticon-uicons": "^2.2.0"
-  }
+  },
+  "name": "elevauto",
+  "version": "1.0.0",
+  "main": "index2.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasCobanera/Elevauto-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasCobanera/Elevauto-Page/issues"
+  },
+  "homepage": "https://github.com/LucasCobanera/Elevauto-Page#readme",
+  "description": ""
 }
