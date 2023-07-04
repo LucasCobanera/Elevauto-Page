@@ -536,14 +536,18 @@ main .servicios-container .servicios-info-container .servicios-info h2 {
   cursor: pointer;
   font-family: "Chakra Petch", sans-serif;
   font-size: 2.8rem;
+  margin: 20px 0 0;
 }
 main .servicios-container .servicios-info-container .servicios-info ul {
   list-style: none;
   padding: 0;
   text-align: start;
-  width: 350px;
-  font-weight: 500;
+  width: 400px;
+  font-weight: normal;
   font-size: 2rem;
+}
+main .servicios-container .servicios-info-container .servicios-info ul li {
+  margin: 10px 0;
 }
 main .servicios-container .servicios-info-container .expandir {
   height: 300px;

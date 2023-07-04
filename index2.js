@@ -1,21 +1,26 @@
 //                GENERAL
+function cargaProductosDestacados() {
+  let homeProducts = document.getElementById("home-products");
+  for (let i = 0; i <= 2; i++) {
+    let picture = document.createElement("picture");
+    let img = document.createElement("img");
 
-//Subir y bajar encabezado
-let scrollPrevio = window.pageYOffset; //20y
-window.onscroll = function () {
-  let scrollActual = window.pageYOffset; //-50y
+    let div = document.createElement("div");
+    div.classList.add("boton-etiqueta");
+    let button = document.createElement("a");
+    button.textContent = productos1[i].nombre;
+    button.setAttribute("href", "./producto.html?numero=" + i);
+    div.appendChild(button);
 
-  if (scrollPrevio > scrollActual) {
-    document.querySelector(".header").style.top = "0";
-  } else {
-    document.querySelector(".header").style.top = "-126px";
+    img.setAttribute("src", productos1[i].imagenes[0]);
+
+    picture.appendChild(img);
+    picture.appendChild(div);
+
+    homeProducts.appendChild(picture);
   }
-
-  scrollPrevio = scrollActual;
-};
-
+}
 let serviciosDivs = document.querySelectorAll(".servicios-info");
-
 serviciosDivs.forEach(function (div) {
   let titulo = div.querySelector("h2");
   let lista = div.querySelector(".lista");
@@ -24,3 +29,5 @@ serviciosDivs.forEach(function (div) {
     div.classList.toggle("expandir");
   });
 });
+
+cargaProductosDestacados();

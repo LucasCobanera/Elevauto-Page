@@ -556,14 +556,18 @@ main {
           cursor: pointer;
           font-family: $secondary-font;
           font-size: 2.8rem;
+          margin: 20px 0 0;
         }
         ul {
           list-style: none;
           padding: 0;
           text-align: start;
-          width: 350px;
-          font-weight: 500;
+          width: 400px;
+          font-weight: normal;
           font-size: 2rem;
+          li {
+            margin: 10px 0;
+          }
         }
       }
       .expandir {
