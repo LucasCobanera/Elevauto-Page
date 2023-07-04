@@ -1,3 +1,7 @@
+//General
+$primary-font: "Dosis", sans-serif;
+$secondary-font: "Chakra Petch", sans-serif;
+
 a {
   text-decoration: none;
   color: #fff;
@@ -7,6 +11,16 @@ a {
   display: none;
 }
 
+.contacto {
+  background-color: #ffffff;
+  border: 1px solid #c1c1c1;
+  margin: 20px;
+  padding: 10px;
+}
+.fi {
+  font-size: 4rem;
+  margin-right: 15px;
+}
 html {
   font-size: 62.5%;
 }
@@ -14,8 +28,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 1.4rem;
-  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-family: $primary-font;
   color: #000;
   text-transform: uppercase;
   font-weight: normal;
@@ -93,23 +107,29 @@ main {
     background-size: cover;
     background-position: center;
     .hero {
-      width: 100%;
       height: 100%;
+      padding-left: 50px;
+      padding-top: 100px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+
+      h1 {
+        color: #fff;
+        font-size: 5rem;
+        letter-spacing: 5px;
+        font-weight: 800;
+      }
       h2 {
-        color: #ffffff;
-        font-size: 3.2rem;
+        color: #fff;
+        font-size: 4rem;
         letter-spacing: 5px;
         margin-bottom: 50px;
         line-height: 1.4;
         text-transform: uppercase;
-        font-weight: normal;
+        font-weight: 800;
       }
       button {
-        font-family: "Open Sans", sans-serif;
+        font-family: $primary-font;
         font-weight: normal;
         font-size: 1.4rem;
         background-color: #00000000;
@@ -140,10 +160,9 @@ main {
       margin: 0;
       text-align: center;
       padding: 40px 0 20px 0px;
-      font-family: "kanit", sans-serif;
+      font-family: $secondary-font;
       font-size: 4rem;
-      font-weight: 800;
-      font-style: italic;
+      font-weight: 700;
       color: #0095ff;
       letter-spacing: 2px;
       text-shadow: 0px 0px 2px #000;
@@ -175,16 +194,15 @@ main {
           justify-content: center;
           margin-bottom: 20px;
           a {
-            justify-self: end;
             padding: 5px 20px;
             width: 100px;
             text-align: center;
             margin: 10px 20px 20px;
             background-color: #49acf3;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: #000;
-            font-weight: 700;
+            font-weight: 800;
             border-radius: 5px;
             transition: 0.5s ease;
           }
@@ -215,10 +233,10 @@ main {
       align-items: center;
       height: 80px;
       a {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         color: #000;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
+        font-family: $primary-font;
+        font-weight: 800;
         text-transform: uppercase;
         padding: 10px 60px;
         background-color: #49acf3;
@@ -232,6 +250,73 @@ main {
         padding: 15px 65px;
         cursor: pointer;
         transition: 0.5s;
+      }
+    }
+  }
+  .nosotros-container {
+    width: 100%;
+    background-color: #000;
+    background-image: url("./elevauto/fondo-negro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 20px 0;
+    h2 {
+      margin: 0;
+      text-align: center;
+      padding: 40px 0 20px 0px;
+      font-family: $secondary-font;
+      font-size: 4rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 2px;
+      text-shadow: 0px 0px 2px #000;
+    }
+    .nosotros-info-container {
+      max-width: 1020px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .nosotros-info {
+        box-shadow: 0 0 10px 10px #000;
+        margin: 20px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease;
+        h3 {
+          opacity: 1;
+          position: absolute;
+          transition: opacity 0.3s ease-in-out;
+          font-size: 2.8rem;
+        }
+        p {
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+          padding: 10px;
+          letter-spacing: 2px;
+        }
+        p::first-letter {
+          font-size: 3rem;
+          font-weight: bold;
+        }
+      }
+      .nosotros-info:hover {
+        background-color: #0000006b;
+        margin: 10px;
+        height: 220px;
+        transition: 0.3s;
+
+        h3 {
+          // display: none;
+          opacity: 0;
+        }
+        p {
+          display: block;
+          opacity: 1;
+        }
       }
     }
   }
@@ -325,7 +410,7 @@ main {
         }
         a {
           font-size: 1.5rem;
-          font-family: "Montserrat", sans-serif;
+          font-family: $primary-font;
           font-weight: 700;
           text-transform: uppercase;
           padding: 10px 60px;
@@ -423,17 +508,71 @@ main {
       }
     }
   }
+
+  //PAGINA DE SERVICIOS
+  .servicios-container {
+    width: 100%;
+    background-image: url("./elevauto/fondo-negro.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    p {
+      width: 980px;
+      margin: 0px auto;
+      padding: 20px;
+      line-height: 1.8;
+      letter-spacing: 2.8px;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 800;
+      font-size: 4rem;
+      font-family: $secondary-font;
+      color: #0095ff;
+      margin: 0;
+      padding: 10px 0;
+    }
+    .servicios-info-container {
+      display: flex;
+      max-width: 1020px;
+      flex-direction: column;
+      margin: 0 auto;
+      .servicios-info {
+        width: 100%;
+        height: 100px;
+        background-color: #0000006b;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        transition: height 0.3s ease;
+        h2 {
+          text-align: center;
+          cursor: pointer;
+          font-family: $secondary-font;
+          font-size: 2.8rem;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          text-align: start;
+          width: 350px;
+          font-weight: 500;
+          font-size: 2rem;
+        }
+      }
+      .expandir {
+        height: 300px;
+      }
+    }
+  }
 }
-.contacto {
-  background-color: #ffffff;
-  border: 1px solid #c1c1c1;
-  margin: 20px;
-  padding: 10px;
-}
-.fi {
-  font-size: 4rem;
-  margin-right: 15px;
-}
+
 //footer
 footer {
   display: flex;

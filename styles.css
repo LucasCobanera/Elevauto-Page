@@ -7,6 +7,18 @@ a {
   display: none;
 }
 
+.contacto {
+  background-color: #ffffff;
+  border: 1px solid #c1c1c1;
+  margin: 20px;
+  padding: 10px;
+}
+
+.fi {
+  font-size: 4rem;
+  margin-right: 15px;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -15,8 +27,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 1.4rem;
-  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-family: "Dosis", sans-serif;
   color: #000;
   text-transform: uppercase;
   font-weight: normal;
@@ -94,24 +106,29 @@ main .home {
   background-position: center;
 }
 main .home .hero {
-  width: 100%;
   height: 100%;
+  padding-left: 50px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+main .home .hero h1 {
+  color: #fff;
+  font-size: 5rem;
+  letter-spacing: 5px;
+  font-weight: 800;
 }
 main .home .hero h2 {
-  color: #ffffff;
-  font-size: 3.2rem;
+  color: #fff;
+  font-size: 4rem;
   letter-spacing: 5px;
   margin-bottom: 50px;
   line-height: 1.4;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 800;
 }
 main .home .hero button {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: normal;
   font-size: 1.4rem;
   background-color: rgba(0, 0, 0, 0);
@@ -141,10 +158,9 @@ main .home-products-container h2 {
   margin: 0;
   text-align: center;
   padding: 40px 0 20px 0px;
-  font-family: "kanit", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 4rem;
-  font-weight: 800;
-  font-style: italic;
+  font-weight: 700;
   color: #0095ff;
   letter-spacing: 2px;
   text-shadow: 0px 0px 2px #000;
@@ -178,16 +194,15 @@ main .home-products-container .home-products picture .boton-etiqueta {
   margin-bottom: 20px;
 }
 main .home-products-container .home-products picture .boton-etiqueta a {
-  justify-self: end;
   padding: 5px 20px;
   width: 100px;
   text-align: center;
   margin: 10px 20px 20px;
   background-color: #49acf3;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #000;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: 5px;
   transition: 0.5s ease;
 }
@@ -214,10 +229,10 @@ main .home-products-container .boton-productos {
   height: 80px;
 }
 main .home-products-container .boton-productos a {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #000;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
   padding: 10px 60px;
   background-color: #49acf3;
@@ -231,6 +246,71 @@ main .home-products-container .boton-productos a:hover {
   padding: 15px 65px;
   cursor: pointer;
   transition: 0.5s;
+}
+main .nosotros-container {
+  width: 100%;
+  background-color: #000;
+  background-image: url("./elevauto/fondo-negro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 20px 0;
+}
+main .nosotros-container h2 {
+  margin: 0;
+  text-align: center;
+  padding: 40px 0 20px 0px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 2px #000;
+}
+main .nosotros-container .nosotros-info-container {
+  max-width: 1020px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .nosotros-container .nosotros-info-container .nosotros-info {
+  box-shadow: 0 0 10px 10px #000;
+  margin: 20px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+main .nosotros-container .nosotros-info-container .nosotros-info h3 {
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 2.8rem;
+}
+main .nosotros-container .nosotros-info-container .nosotros-info p {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+main .nosotros-container .nosotros-info-container .nosotros-info p::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+}
+main .nosotros-container .nosotros-info-container .nosotros-info:hover {
+  background-color: rgba(0, 0, 0, 0.4196078431);
+  margin: 10px;
+  height: 220px;
+  transition: 0.3s;
+}
+main .nosotros-container .nosotros-info-container .nosotros-info:hover h3 {
+  opacity: 0;
+}
+main .nosotros-container .nosotros-info-container .nosotros-info:hover p {
+  display: block;
+  opacity: 1;
 }
 main .contacto-container {
   max-width: 1020px;
@@ -318,7 +398,7 @@ main .body-products .contenedor-productos .producto p {
 }
 main .body-products .contenedor-productos .producto a {
   font-size: 1.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px 60px;
@@ -407,17 +487,66 @@ main .product-container .table-info-product .table-product {
   padding: 10px;
   line-height: 1.4;
 }
-
-.contacto {
-  background-color: #ffffff;
-  border: 1px solid #c1c1c1;
-  margin: 20px;
-  padding: 10px;
+main .servicios-container {
+  width: 100%;
+  background-image: url("./elevauto/fondo-negro.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
 }
-
-.fi {
+main .servicios-container p {
+  width: 980px;
+  margin: 0px auto;
+  padding: 20px;
+  line-height: 1.8;
+  letter-spacing: 2.8px;
+}
+main .servicios-container h1 {
+  text-align: center;
+  font-weight: 800;
   font-size: 4rem;
-  margin-right: 15px;
+  font-family: "Chakra Petch", sans-serif;
+  color: #0095ff;
+  margin: 0;
+  padding: 10px 0;
+}
+main .servicios-container .servicios-info-container {
+  display: flex;
+  max-width: 1020px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+main .servicios-container .servicios-info-container .servicios-info {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.4196078431);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  transition: height 0.3s ease;
+}
+main .servicios-container .servicios-info-container .servicios-info h2 {
+  text-align: center;
+  cursor: pointer;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2.8rem;
+}
+main .servicios-container .servicios-info-container .servicios-info ul {
+  list-style: none;
+  padding: 0;
+  text-align: start;
+  width: 350px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+main .servicios-container .servicios-info-container .expandir {
+  height: 300px;
 }
 
 footer {
