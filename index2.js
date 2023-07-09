@@ -22,7 +22,7 @@ function cargaProductosDestacados() {
 }
 function mostrarNav() {
   let navBar = document.getElementById("nav-bar");
-  if (navBar.style.display == "none") {
+  if (navBar.style.display == "none" || navBar.style.display == "") {
     navBar.style.display = "grid";
   } else {
     navBar.style.display = "none";

@@ -2,6 +2,7 @@
   display: none;
 }
 .header {
+  height: 80;
   nav {
     .bottom-navbar {
       display: none;
@@ -13,6 +14,7 @@
       .logo {
         margin-left: 20px;
         margin-top: 20px;
+        height: 80px;
       }
       .nav-bar {
         display: none;
@@ -37,15 +39,40 @@
 main {
   .home {
     width: 100%;
+    height: 300px;
+    .hero {
+      padding: 0;
+      text-align: center;
+      h1 {
+        font-size: 3.5rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+    }
   }
   .home-products-container {
+    h2 {
+      font-size: 2.5rem;
+    }
     .home-products {
       overflow-x: scroll;
     }
   }
   .nosotros-container {
+    h2 {
+      font-size: 2.5rem;
+    }
     .nosotros-info-container {
       display: block;
+      .nosotros-info {
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
     }
   }
   .contacto-container {
@@ -53,6 +80,13 @@ main {
     flex-direction: column;
     .contacto-left {
       display: none;
+    }
+    .contacto {
+      .texto-contacto {
+        h4 {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }

@@ -2,6 +2,9 @@
   display: none;
 }
 
+.header {
+  height: 80;
+}
 .header nav .bottom-navbar {
   display: none;
 }
@@ -13,6 +16,7 @@
 .header nav .navbar-container .logo {
   margin-left: 20px;
   margin-top: 20px;
+  height: 80px;
 }
 .header nav .navbar-container .nav-bar {
   display: none;
@@ -33,12 +37,35 @@
 
 main .home {
   width: 100%;
+  height: 300px;
+}
+main .home .hero {
+  padding: 0;
+  text-align: center;
+}
+main .home .hero h1 {
+  font-size: 3.5rem;
+}
+main .home .hero h2 {
+  font-size: 3rem;
+}
+main .home-products-container h2 {
+  font-size: 2.5rem;
 }
 main .home-products-container .home-products {
   overflow-x: scroll;
 }
+main .nosotros-container h2 {
+  font-size: 2.5rem;
+}
 main .nosotros-container .nosotros-info-container {
   display: block;
+}
+main .nosotros-container .nosotros-info-container .nosotros-info h3 {
+  font-size: 2rem;
+}
+main .nosotros-container .nosotros-info-container .nosotros-info p {
+  font-size: 1.4rem;
 }
 main .contacto-container {
   display: flex;
@@ -46,4 +73,7 @@ main .contacto-container {
 }
 main .contacto-container .contacto-left {
   display: none;
+}
+main .contacto-container .contacto .texto-contacto h4 {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=phone.css.map */
