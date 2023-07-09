@@ -20,6 +20,14 @@ function cargaProductosDestacados() {
     homeProducts.appendChild(picture);
   }
 }
+function mostrarNav() {
+  let navBar = document.getElementById("nav-bar");
+  if (navBar.style.display == "none") {
+    navBar.style.display = "grid";
+  } else {
+    navBar.style.display = "none";
+  }
+}
 let serviciosDivs = document.querySelectorAll(".servicios-info");
 serviciosDivs.forEach(function (div) {
   let titulo = div.querySelector("h2");
