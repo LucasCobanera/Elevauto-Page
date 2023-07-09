@@ -60,7 +60,6 @@ let productos1 = [
 ];
 
 //Subir y bajar encabezado
-let anchoVentana = window.innerWidth;
 let scrollPrevio = window.pageYOffset; //20y
 window.onscroll = function () {
   let scrollActual = window.pageYOffset; //-50y
@@ -72,6 +71,12 @@ window.onscroll = function () {
 
   scrollPrevio = scrollActual;
 };
+
+function mostrarNav() {
+  let navBar = document.getElementById("nav-bar");
+  let header = document.getElementById("header");
+  navBar.classList.toggle("mostrar");
+}
 
 //Carga de productos
 let contProductos = document.getElementById("productos");
