@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <nav>
             <div class="bottom-navbar">
                 <i class="fi fi-rr-phone-call"> (54 011) 4461-6333/6444</i>
@@ -32,17 +32,23 @@
                 <img class="logo" src="./elevauto/logo.png" alt="Elevauto logo" />
                 <span class="menu-burger" id="menu-burger"><i class="fi fi-rr-menu-burger"
                         onclick="mostrarNav()"></i></span>
-                <ul id="nav-bar" class="nav-bar">
+                <ul class="nav-bar">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./servicios.html">Servicios</a></li>
                     <li><a href="./productos.html">Productos</a></li>
                     <li><a href="./index.html#contacto">Contacto</a></li>
                 </ul>
             </div>
+            <ul id="nav-bar" class="nav-bar-phone inactive  ">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./index.html#contacto">Contacto</a></li>
+            </ul>
 
         </nav>
     </header>
-    <main onload="cargarArchivos()">
+    <main id="main" onload="cargarArchivos()">
         <section class="home">
             <div class="hero">
                 <h1>Elevauto</h1>

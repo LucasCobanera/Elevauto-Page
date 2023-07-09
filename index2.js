@@ -22,11 +22,8 @@ function cargaProductosDestacados() {
 }
 function mostrarNav() {
   let navBar = document.getElementById("nav-bar");
-  if (navBar.style.display == "none" || navBar.style.display == "") {
-    navBar.style.display = "grid";
-  } else {
-    navBar.style.display = "none";
-  }
+  let header = document.getElementById("header");
+  navBar.classList.toggle("mostrar");
 }
 let serviciosDivs = document.querySelectorAll(".servicios-info");
 serviciosDivs.forEach(function (div) {

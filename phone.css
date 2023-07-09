@@ -1,9 +1,10 @@
-.inactive {
-  display: none;
+.mostrar {
+  display: flex;
+  opacity: 1;
 }
 
 .header {
-  height: 80;
+  height: 80px;
 }
 .header nav .bottom-navbar {
   display: none;
@@ -15,26 +16,44 @@
 }
 .header nav .navbar-container .logo {
   margin-left: 20px;
-  margin-top: 20px;
-  height: 80px;
+  margin-top: 10px;
+  height: 60px;
 }
 .header nav .navbar-container .nav-bar {
   display: none;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  background-color: #48acf4;
-  margin: 0;
-  padding: 0;
 }
-.header nav .navbar-container .nav-bar li {
-  border: none;
-  text-align: center;
+.header nav .nav-bar-phone {
+  display: none;
+  width: 768px;
+  height: 100%;
+  background-color: #fff;
+  margin: 0;
+  border-top: 2px solid #cecece;
+}
+.header nav .nav-bar-phone li {
+  list-style: none;
+  margin: 30px 10px;
+}
+.header nav .nav-bar-phone li a {
+  color: #000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.header nav .mostrar {
+  display: block;
 }
 .header nav .menu-burger {
   display: flex;
   align-items: center;
+  margin-right: 20px;
+}
+.header nav .menu-burger .fi {
+  font-size: 2.5rem;
 }
 
+main {
+  padding-top: 80px;
+}
 main .home {
   width: 100%;
   height: 300px;
