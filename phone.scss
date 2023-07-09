@@ -94,6 +94,10 @@ main {
   .contacto-container {
     display: flex;
     flex-direction: column;
+    .contacto-title {
+      display: block;
+      text-align: center;
+    }
     .contacto-left {
       display: none;
     }
@@ -103,6 +107,28 @@ main {
           font-size: 1.5rem;
         }
       }
+    }
+  }
+}
+footer {
+  height: 80px;
+  width: 100%;
+  // display: grid;
+  // grid-template-rows: 1fr 1fr;
+  picture {
+    img {
+      height: 60px;
+      width: auto;
+    }
+  }
+  .footer-icons {
+    p {
+      font-size: 1rem;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    .fi {
+      font-size: 2rem;
     }
   }
 }

@@ -90,9 +90,30 @@ main .contacto-container {
   display: flex;
   flex-direction: column;
 }
+main .contacto-container .contacto-title {
+  display: block;
+  text-align: center;
+}
 main .contacto-container .contacto-left {
   display: none;
 }
 main .contacto-container .contacto .texto-contacto h4 {
   font-size: 1.5rem;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+}
+footer picture img {
+  height: 60px;
+  width: auto;
+}
+footer .footer-icons p {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 5px;
+}
+footer .footer-icons .fi {
+  font-size: 2rem;
 }/*# sourceMappingURL=phone.css.map */
