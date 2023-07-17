@@ -132,6 +132,61 @@ main {
       }
     }
   }
+  //Product page
+  .product-container {
+    .product-info {
+      flex-direction: column;
+      .product-left {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 10px;
+        .first-image {
+          width: 300px;
+        }
+        .galeria-img {
+          width: 100%;
+          height: 100px;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .product-right {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 10px 0;
+
+        h1 {
+          text-align: center;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .table-info-product {
+      font-size: 1.2rem;
+    }
+  }
+
+  //Servicios page
+  .servicios-container {
+    width: 100%;
+    p {
+      width: auto;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    .servicios-info-container {
+      .servicios-info {
+        ul {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
 }
 footer {
   height: 80px;

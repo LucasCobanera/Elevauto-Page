@@ -121,6 +121,51 @@ main .body-products .contenedor-productos .producto h2 {
 main .body-products .contenedor-productos .producto p {
   font-size: 1.5rem;
 }
+main .product-container .product-info {
+  flex-direction: column;
+}
+main .product-container .product-info .product-left {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+main .product-container .product-info .product-left .first-image {
+  width: 300px;
+}
+main .product-container .product-info .product-left .galeria-img {
+  width: 100%;
+  height: 100px;
+}
+main .product-container .product-info .product-left .galeria-img img {
+  width: 100px;
+  height: 100px;
+}
+main .product-container .product-info .product-right {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+}
+main .product-container .product-info .product-right h1 {
+  text-align: center;
+}
+main .product-container .product-info .product-right p {
+  font-size: 1.4rem;
+}
+main .product-container .table-info-product {
+  font-size: 1.2rem;
+}
+main .servicios-container {
+  width: 100%;
+}
+main .servicios-container p {
+  width: auto;
+  font-size: 1.6rem;
+  text-align: center;
+}
+main .servicios-container .servicios-info-container .servicios-info ul {
+  font-size: 1.8rem;
+}
 
 footer {
   height: 80px;
