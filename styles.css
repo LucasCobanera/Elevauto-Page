@@ -104,10 +104,11 @@ main {
   background-color: #ececec;
 }
 main .home {
-  height: 600px;
-  background-image: linear-gradient(rgba(73, 172, 243, 0.5960784314), rgba(73, 172, 243, 0.5960784314)), url(./elevauto/section-bg-6.jpg);
+  height: 650px;
+  background-image: linear-gradient(rgba(73, 172, 243, 0.5960784314), rgba(0, 149, 249, 0.5607843137)), url(./elevauto/fondo-1.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 main .home .hero {
   height: 100%;
@@ -119,17 +120,19 @@ main .home .hero {
 main .home .hero h1 {
   color: #fff;
   font-size: 5rem;
-  letter-spacing: 5px;
-  font-weight: 800;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin: 50px 0;
 }
 main .home .hero h2 {
   color: #fff;
-  font-size: 4rem;
-  letter-spacing: 5px;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
   margin-bottom: 50px;
   line-height: 1.4;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 500;
+  margin: 0;
 }
 main .home .hero button {
   font-family: "Dosis", sans-serif;
@@ -153,7 +156,7 @@ main .home .hero button:hover {
 main .home-products-container {
   margin-top: 0;
   height: 600px;
-  background-image: url(./elevauto/fondo.jpg);
+  background-image: url("./elevauto/fondo.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -566,7 +569,8 @@ footer {
   height: 150px;
 }
 footer picture img {
-  width: 250px;
+  height: 80px;
+  margin-right: 50px;
 }
 footer .footer-icons {
   color: #0095ff;

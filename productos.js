@@ -1,13 +1,13 @@
 let productos1 = [
   (elevador1 = {
-    nombre: "EP-3500",
+    nombre: "EP-123",
     tipo: "Elevador Electrohidráulico",
     descripcion:
       "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
     imagenes: [
-      "./elevauto/Eco 3500.jpg",
-      "./elevauto/elevador.jpeg",
-      "./elevauto/elevador2.jpeg",
+      "./elevauto/elevador-1.jpg",
+      "./elevauto/elevador-2.jpg",
+      "./elevauto/elevador-3.jpg",
     ],
     ficha: [
       (Carga = "3500KG"),
@@ -17,14 +17,14 @@ let productos1 = [
     ],
   }),
   (elevador2 = {
-    nombre: "EE-3500",
+    nombre: "EE-123",
     tipo: "Elevador Electrohidráulico",
     descripcion:
       "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
     imagenes: [
-      "./elevauto/imagen_monatana.jpeg",
-      "./elevauto/WhatsApp Image 2021-11-27 at 21.18.58.jpeg",
-      "./elevauto/WhatsApp Image 2023-06-09 at 15.16.04.jpeg",
+      "./elevauto/elevador-2.jpg",
+      "./elevauto/elevador-3.jpg",
+      "./elevauto/elevador-4.jpg",
     ],
     ficha: [
       (Carga = "3500KG"),
@@ -34,29 +34,74 @@ let productos1 = [
     ],
   }),
   (elevador3 = {
-    nombre: "elevador 45",
-    descripcion: "cccccccc",
+    nombre: "EE-123",
+    tipo: "Elevador Electrohidráulico",
+    descripcion:
+      "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
+    imagenes: [
+      "./elevauto/elevador-4.jpg",
+      "./elevauto/elevador-1.jpg",
+      "./elevauto/elevador-2.jpg",
+    ],
+    ficha: [
+      (Carga = "3500KG"),
+      (tiempoElevacion = "50 seg"),
+      (Elevacion = "1950 mm"),
+      (Potencia = "3 Hp"),
+    ],
   }),
   (elevador4 = {
-    nombre: "elevador b52",
-    descripcion: "dddddd",
+    nombre: "EE-123",
+    tipo: "Elevador Electrohidráulico",
+    descripcion:
+      "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
+    imagenes: [
+      "./elevauto/elevador-3.jpg",
+      "./elevauto/elevador-1.jpg",
+      "./elevauto/elevador-2.jpg",
+    ],
+    ficha: [
+      (Carga = "3500KG"),
+      (tiempoElevacion = "50 seg"),
+      (Elevacion = "1950 mm"),
+      (Potencia = "3 Hp"),
+    ],
   }),
   (elevador5 = {
-    nombre: "elevador b232",
-    descripcion: "eeeeeeeeee",
+    nombre: "EP-123",
+    tipo: "Elevador Electrohidráulico",
+    descripcion:
+      "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
+    imagenes: [
+      "./elevauto/elevador-1.jpg",
+      "./elevauto/elevador-2.jpg",
+      "./elevauto/elevador-3.jpg",
+    ],
+    ficha: [
+      (Carga = "3500KG"),
+      (tiempoElevacion = "50 seg"),
+      (Elevacion = "1900 mm"),
+      (Potencia = "3 Hp"),
+    ],
   }),
   (elevador6 = {
-    nombre: "elevador b72",
-    descripcion: "ffffffffff",
+    nombre: "EP-123",
+    tipo: "Elevador Electrohidráulico",
+    descripcion:
+      "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
+    imagenes: [
+      "./elevauto/elevador-1.jpg",
+      "./elevauto/elevador-2.jpg",
+      "./elevauto/elevador-3.jpg",
+    ],
+    ficha: [
+      (Carga = "3500KG"),
+      (tiempoElevacion = "50 seg"),
+      (Elevacion = "1900 mm"),
+      (Potencia = "3 Hp"),
+    ],
   }),
-  (elevador7 = {
-    nombre: "elevador b42",
-    descripcion: "ggggggg",
-  }),
-  (elevador8 = {
-    nombre: "elevador b12",
-    descripcion: "hhhhh",
-  }),
+
 ];
 
 //Subir y bajar encabezado

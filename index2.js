@@ -1,7 +1,7 @@
 //                GENERAL
 function cargaProductosDestacados() {
   let homeProducts = document.getElementById("home-products");
-  for (let i = 0; i <= 2; i++) {
+  for (let i = 0; i <= 3; i++) {
     let picture = document.createElement("picture");
     let img = document.createElement("img");
 
