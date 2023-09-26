@@ -5,7 +5,7 @@ let productos1 = [
     descripcion:
       "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
     imagenes: [
-      "./elevauto/elevador-1.jpg",
+      "./elevauto/Elevador-1.jpg",
       "./elevauto/elevador-2.jpg",
       "./elevauto/elevador-3.jpg",
     ],
@@ -40,7 +40,7 @@ let productos1 = [
       "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
     imagenes: [
       "./elevauto/elevador-4.jpg",
-      "./elevauto/elevador-1.jpg",
+      "./elevauto/Elevador-1.jpg",
       "./elevauto/elevador-2.jpg",
     ],
     ficha: [
@@ -57,7 +57,7 @@ let productos1 = [
       "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
     imagenes: [
       "./elevauto/elevador-3.jpg",
-      "./elevauto/elevador-1.jpg",
+      "./elevauto/Elevador-1.jpg",
       "./elevauto/elevador-2.jpg",
     ],
     ficha: [
@@ -73,7 +73,7 @@ let productos1 = [
     descripcion:
       "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
     imagenes: [
-      "./elevauto/elevador-1.jpg",
+      "./elevauto/Elevador-1.jpg",
       "./elevauto/elevador-2.jpg",
       "./elevauto/elevador-3.jpg",
     ],
@@ -90,7 +90,7 @@ let productos1 = [
     descripcion:
       "Este elevador fue creado en base a las normas internacionales, diseñado para satisfacer las demandas del taller. \n El cable y la tuberia de aceite esta totalmente ocultos, dandole una apariencia elegante y moderada...",
     imagenes: [
-      "./elevauto/elevador-1.jpg",
+      "./elevauto/Elevador-1.jpg",
       "./elevauto/elevador-2.jpg",
       "./elevauto/elevador-3.jpg",
     ],
