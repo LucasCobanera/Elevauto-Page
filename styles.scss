@@ -1,6 +1,8 @@
 //General
 $primary-font: "Dosis", sans-serif;
 $secondary-font: "Chakra Petch", sans-serif;
+$primary-color: rgba(156, 32, 27);
+$secondary-color: rgb(156, 2, 2);
 
 a {
   text-decoration: none;
@@ -77,7 +79,7 @@ body {
           }
         }
         li:hover {
-          border-top: 2px solid #48acf4;
+          border-top: 2px solid $primary-color;
           transition: 0.5s;
         }
       }
@@ -90,10 +92,11 @@ body {
       padding: 5px 0;
       display: flex;
       justify-content: space-evenly;
-      background-color: #49acf3;
+      background-color: $secondary-color;
+      color: #fff;
       i {
         font-size: 1.2rem;
-        font-weight: 700;
+        font-weight: 500;
         font-style: normal;
       }
     }
@@ -106,7 +109,7 @@ main {
   background-color: #ececec;
   .home {
     height: 650px;
-    background-image: linear-gradient(#49acf398,#0095f98f ),
+    background-image: linear-gradient( rgba(156, 31, 27, 0.352) ,rgba(156, 2, 2, 0.5) ),
       url(./elevauto/fondo-1.jpg);
     background-size: cover;
     background-position:center;
@@ -170,7 +173,7 @@ main {
       font-family: $secondary-font;
       font-size: 4rem;
       font-weight: 700;
-      color: #0095ff;
+      color: $primary-color;
       letter-spacing: 2px;
       text-shadow: 0px 0px 2px #000;
     }
@@ -205,16 +208,18 @@ main {
             width: 100px;
             text-align: center;
             margin: 10px 20px 20px;
-            background-color: #49acf3;
+            background-color: $primary-color;
             text-decoration: none;
             font-size: 1.6rem;
-            color: #000;
-            font-weight: 800;
+            color: #fff;
+            font-weight: 600;
+            line-height: 1.6rem;
+            letter-spacing: 0.1rem;
             border-radius: 5px;
             transition: 0.5s ease;
           }
           a:hover {
-            background-color: #0095ff;
+            background-color: $secondary-color;
 
             transition: 0.3s;
           }
@@ -241,18 +246,18 @@ main {
       height: 80px;
       a {
         font-size: 1.6rem;
-        color: #000;
+        color: #fff;
         font-family: $primary-font;
-        font-weight: 800;
+        font-weight: 600;
         text-transform: uppercase;
         padding: 10px 60px;
-        background-color: #49acf3;
+        background-color: $primary-color;
         border: none;
         border-radius: 5px;
         transition: 0.5s ease;
       }
       a:hover {
-        background-color: #0095ff;
+        background-color: $secondary-color;
         font-size: 1.7rem;
         padding: 15px 65px;
         cursor: pointer;
@@ -402,12 +407,14 @@ main {
         box-shadow: 0px 0px 5px #bbbbbb;
         img {
           width: 300px;
+          height: 285px;
         }
         h2 {
           font-size: 2.5rem;
           font-weight: bold;
           letter-spacing: 1px;
           margin: 5px 0;
+          color: #fff;
         }
         p {
           margin: 5px 0;
@@ -416,19 +423,20 @@ main {
           font-style: italic;
         }
         a {
+          margin-top: 10px;
           font-size: 1.5rem;
           font-family: $primary-font;
           font-weight: 700;
           text-transform: uppercase;
           padding: 10px 60px;
-          background-color: #49acf3;
+          background-color: $primary-color;
           border: none;
           border-radius: 5px;
           cursor: pointer;
           transition: 0.3s;
         }
         a:hover {
-          background-color: #0095ff;
+          background-color: $secondary-color;
           transition: all 0.3s ease;
         }
       }
@@ -489,7 +497,7 @@ main {
         h1 {
           font-size: 3rem;
           font-weight: 800;
-          color: #0095ff;
+          color: $secondary-color;
         }
         p {
           color: #777777;
@@ -539,7 +547,7 @@ main {
       font-weight: 800;
       font-size: 4rem;
       font-family: $secondary-font;
-      color: #0095ff;
+      color: $secondary-color;
       margin: 0;
       padding: 10px 0;
     }
@@ -599,9 +607,9 @@ footer {
     }
   }
   .footer-icons {
-    color: #0095ff;
+    color: $secondary-color;
     .fi {
-      color: #0095ff;
+      color: $secondary-color;
       font-size: 3rem;
     }
   }
